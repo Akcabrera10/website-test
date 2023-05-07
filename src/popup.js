@@ -68,7 +68,7 @@ function ImageCarousel(props) {
 
   return (
     <div className="image-carousel">
-      <img className="popup-img" src={props.images[currentImageIndex]} alt={`Extra ${currentImageIndex + 1}`} />
+      <img className="popup-img" src={process.env.PUBLIC_URL + props.images[currentImageIndex]} alt={`Extra ${currentImageIndex + 1}`} />
       <div className="carousel-buttons">
         <button onClick={handlePrevious}>&lt;</button>
         <button onClick={handleNext}>&gt;</button>
@@ -83,7 +83,7 @@ function renderExtra(extraImages) {
     return <ImageCarousel images={extraImages} />;
   } else {
     if (typeof extraImages === "string" && (extraImages.startsWith("http://") || extraImages.startsWith("https://") || /\.(jpe?g|png|gif)$/i.test(extraImages))) {
-      return <img className="popup-img" src={extraImages} alt="Extra" />;
+      return <img className="popup-img" src={process.env.PUBLIC_URL + extraImages} alt="Extra" />;
     } else {
       return <span>{extraImages}</span>;
     }

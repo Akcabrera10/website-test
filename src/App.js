@@ -261,7 +261,7 @@ function App() {
             <div ref={aboutRef} className="section3">
               {showAbout &&( 
             <><div className="work-images" style={{ width: "60%" }}>
-              {activeImage && <img className="float-text2" src={activeImage.src} alt={activeImage.label} key={activeImage.src} />}
+              {activeImage && <img className="float-text2" src={process.env.PUBLIC_URL + activeImage.src} alt={activeImage.label} key={activeImage.src} />}
             </div><div className="work-list">
                 <h2 className="sech3">My Projects.</h2>
                 <ol>
