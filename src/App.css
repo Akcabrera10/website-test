@@ -266,8 +266,14 @@ body::-webkit-scrollbar-thumb {
 .social-links span {
   display: inline-block;
   margin-left: 5px;
+  color:white;
 }
 
+.social-links span:hover {
+  display: inline-block;
+  margin-left: 5px;
+  color: #1e90ff;
+}
 .fab {
   font-size: 1rem;
   display: inline-flex;
@@ -286,12 +292,14 @@ body::-webkit-scrollbar-thumb {
 
 a {
   text-decoration: none;
+  color:white;
 }
 
 a:visited {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none;
 }
+
 .section {
   border:none;
   margin-bottom:-2px;
