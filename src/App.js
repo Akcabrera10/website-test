@@ -188,7 +188,7 @@ function App() {
         <><div className="App"> 
         <nav className={`navbar ${scrollDirection === "down" ? "hidden" : "visible"}`}>
         <div className="navbar-left">
-          <span className="logo"></span>
+          <span className="logo" onClick={() => window.location.href = '/'}></span>
         </div>
         <div className="navbar-right">
           {window.innerWidth > 1080 ? (
@@ -285,9 +285,9 @@ function App() {
                 </div>
                 <div className="footer-navbar-right">
                 <ul class="social-links">
-                  <li><a href="https://www.instagram.com"><i class="fab icon-instagram"></i><span>Instagram</span></a></li>
+                  <li><a href="https://www.instagram.com/arvynkristian"><i class="fab icon-instagram"></i><span>Instagram</span></a></li>
                   <li><a href="https://www.linkedin.com/in/akcabrera/"><i class="fab icon-linkedin"></i><span>LinkedIn</span></a></li>
-                  <li><a href="https://www.github.com"><i class="fab icon-github"></i><span>GitHub</span></a></li>
+                  <li><a href="https://www.github.com/akcabrera10"><i class="fab icon-github"></i><span>GitHub</span></a></li>
                 </ul>
 
             </div>

@@ -226,7 +226,10 @@ body::-webkit-scrollbar-thumb {
   background-image: url('/public/icons/ac.png');
   background-size: contain;
   background-repeat: no-repeat;
-  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.logo:hover {
+  filter: brightness(0.6) sepia(1.5) hue-rotate(185deg);
 }
 
 .logo2 {
@@ -871,6 +874,41 @@ ol li:before {
 
 
 /*******************************************************************/
+@media only screen and (max-width: 1800px) {
+
+.section1 h2{
+  font-size:4rem;
+}
+
+.section1 p{
+  font-size:3rem;
+}
+.sech2 {
+  font-size:3rem;
+}
+
+.secp2 {
+  font-size:1.5rem;
+}
+
+.secp3{
+font-size:1.5rem;
+}
+
+.section li{
+font-size:1.5rem;
+}
+
+.work-images img {
+
+  margin-left:15%;
+
+}
+
+.sech3{
+  font-size:4rem;
+}
+}
 
 
 
